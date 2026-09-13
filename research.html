@@ -3,18 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — CERL | IIT Delhi</title>
-<meta name="description" content="Research themes of the Combustion Engineering Research Laboratory (CERL), IIT Delhi.">
+<title>Research &mdash; CERL | IIT Delhi</title>
+<meta name="description" content="Research themes at CERL, IIT Delhi: soot and PAH formation, acid gas and sulphur recovery, hydrogen production, and alternative fuels.">
+<link rel="icon" href="assets/img/cerl-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-top">
     <a href="index.html" class="brand">
-      <div class="brand-mark">CERL</div>
+      <div class="brand-lockup">
+        <img class="iitd-logo" src="assets/img/iitd_logo.svg" alt="Indian Institute of Technology Delhi">
+        <div class="rule-v"></div>
+        <img class="iitd-logo cerl-logo" src="assets/img/cerl-mark.svg" alt="">
+      </div>
       <div class="brand-text">
         <span class="brand-name">CERL</span>
         <span class="brand-sub">Combustion Engineering Research Laboratory</span>
@@ -26,105 +31,129 @@
     </div>
   </div>
   <nav class="site-nav">
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <button class="nav-toggle" aria-label="Show navigation menu" aria-expanded="false">&#9776;</button>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html" class="active">Research</a></li>
       <li><a href="people.html">People</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="join.html">Join Us</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
-
 <section class="page-header">
   <div class="container">
     <h1>Research</h1>
-    <p>Research themes pursued by the Combustion Engineering Research Laboratory.</p>
+    <p>How fuels burn, what they emit, and what can be recovered.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <p class="section-intro" style="margin-bottom:36px;">
-      The cards below are placeholders for the laboratory's research themes. Each theme card
-      is designed to hold a title, a short description, a representative image (e.g. a
-      combustion photograph, reactor schematic, or plot), and links to related publications.
-      Detailed research content will be added once finalized.
+    <p class="section-intro" style="margin-bottom:10px">
+      The laboratory's work is organised around four directions. They share a common method:
+      build reaction chemistry that is detailed enough to be predictive, validate it against
+      measurement, and then use it to answer a design question about an engine or a process plant.
     </p>
-
-    <div class="grid grid-3">
-
-      <div class="card">
-        <div class="card-media">Research image / schematic placeholder</div>
-        <div class="card-body">
-          <span class="tag">Research Theme</span>
-          <h3>Research Theme Title 1</h3>
-          <p>Placeholder description of this research theme — to be replaced with an
-          accurate, specific summary of the work carried out under this theme.</p>
-          <div class="placeholder-note">Related publications: to be linked here.</div>
-        </div>
+    <article class="theme">
+      <div class="theme-num">01</div>
+      <div>
+        <h3>Soot formation and particulate emissions</h3>
+        <p>Soot begins as gas-phase aromatic molecules and ends as a solid particle that carries trace
+  metals into the air we breathe. We study that whole path: how polycyclic aromatic hydrocarbons
+  grow, in particular the role of five-membered rings in converting acenaphthylene to pyrene and
+  phenanthrene; how the resulting particles are structured internally; and how fuel composition
+  changes both the amount and the character of the soot produced.</p>
+        <p>Experimental work uses electron microscopy and ICP-MS to relate nanostructural disorder and
+  metal content in soot back to the fuel it came from, including diesel and diesel/biodiesel
+  blends.</p>
+        <figure class="theme-figure tall" style="margin:14px 0 0"><img src="assets/img/research/soot-nanostructure-hrtem.jpg" alt="Fringe analysis of HRTEM images of soot from three fuels. More curved, shorter fringes indicate greater nanostructural disorder and a more reactive particle."><figcaption class="figcap">Fringe analysis of HRTEM images of soot from three fuels. More curved, shorter fringes indicate greater nanostructural disorder and a more reactive particle.</figcaption></figure>
+        <p class="placeholder-note" style="margin-top:14px"><strong>To add:</strong> links to the
+        specific papers under this theme, and current students working on it.</p>
       </div>
-
-      <div class="card">
-        <div class="card-media">Research image / schematic placeholder</div>
-        <div class="card-body">
-          <span class="tag">Research Theme</span>
-          <h3>Research Theme Title 2</h3>
-          <p>Placeholder description of this research theme — to be replaced with an
-          accurate, specific summary of the work carried out under this theme.</p>
-          <div class="placeholder-note">Related publications: to be linked here.</div>
-        </div>
+    </article>
+    <article class="theme">
+      <div class="theme-num">02</div>
+      <div>
+        <h3>Acid gas processing and sulphur recovery</h3>
+        <p>Sour gas streams have to be processed before the gas can be used, and the chemistry inside a
+  Claus furnace is neither simple nor well described by global rate expressions. The group has
+  developed detailed reaction mechanisms for H<sub>2</sub>S and other sulphurous species, and for
+  elemental sulphur combustion in sulphuric acid plant furnaces.</p>
+        <p>That kinetics work feeds directly into process design: split-flow configurations that destroy
+  aromatic (BTEX) contaminants, routes for utilising lean acid gas efficiently, and soft sensors
+  for species that are hard to measure online in an operating sulphur recovery unit.</p>
+        <div class="theme-figure" style="text-align:center;color:var(--slate);font-size:.82rem">Figure: Claus reaction furnace schematic <code>assets/img/research/sru.jpg</code></div>
+        <p class="placeholder-note" style="margin-top:14px"><strong>To add:</strong> links to the
+        specific papers under this theme, and current students working on it.</p>
       </div>
-
-      <div class="card">
-        <div class="card-media">Research image / schematic placeholder</div>
-        <div class="card-body">
-          <span class="tag">Research Theme</span>
-          <h3>Research Theme Title 3</h3>
-          <p>Placeholder description of this research theme — to be replaced with an
-          accurate, specific summary of the work carried out under this theme.</p>
-          <div class="placeholder-note">Related publications: to be linked here.</div>
-        </div>
+    </article>
+    <article class="theme">
+      <div class="theme-num">03</div>
+      <div>
+        <h3>Hydrogen and syngas from waste gas</h3>
+        <p>Acid gas is usually treated as a disposal problem. Thermally decomposing it recovers hydrogen
+  instead, and the yield depends sharply on furnace conditions and on contaminants such as
+  ammonia. We model these furnaces with detailed chemistry to find operating windows where
+  hydrogen recovery becomes worthwhile.</p>
+        <p>A related line integrates sulphur combustion with a conventional Claus unit so that the heat
+  and the chemistry of the two processes reinforce each other, raising hydrogen output without a
+  separate reformer.</p>
+        <div class="theme-figure" style="text-align:center;color:var(--slate);font-size:.82rem">Figure: hydrogen yield versus furnace conditions <code>assets/img/research/hydrogen.jpg</code></div>
+        <p class="placeholder-note" style="margin-top:14px"><strong>To add:</strong> links to the
+        specific papers under this theme, and current students working on it.</p>
       </div>
-
-      <div class="card">
-        <div class="card-media">Research image / schematic placeholder</div>
-        <div class="card-body">
-          <span class="tag">Research Theme</span>
-          <h3>Research Theme Title 4</h3>
-          <p>Placeholder description of this research theme — to be replaced with an
-          accurate, specific summary of the work carried out under this theme.</p>
-          <div class="placeholder-note">Related publications: to be linked here.</div>
-        </div>
+    </article>
+    <article class="theme">
+      <div class="theme-num">04</div>
+      <div>
+        <h3>Alternative, oxygenated and surrogate fuels</h3>
+        <p>Fuels are changing faster than the models used to describe them. The group characterises how
+  biofuels and oxygenates &mdash; alcohols, ethers, and terpenes such as &alpha;-pinene &mdash;
+  alter ignition delay, cetane number and sooting tendency when blended into conventional
+  diesel or gasoline.</p>
+        <p>Work here combines shock tube and rapid compression machine data from the literature with
+  kinetic simulation of surrogate blends, so that a candidate blend can be screened before it is
+  ever run in an engine.</p>
+        <figure class="theme-figure " style="margin:14px 0 0"><img src="assets/img/research/fuel-additives-burner.jpg" alt="Left: two bicyclic diesel additives, norbornane and dicyclopentadiene. Right: the wick-fed diffusion burner used to generate and collect soot from candidate blends."><figcaption class="figcap">Left: two bicyclic diesel additives, norbornane and dicyclopentadiene. Right: the wick-fed diffusion burner used to generate and collect soot from candidate blends.</figcaption></figure>
+        <p class="placeholder-note" style="margin-top:14px"><strong>To add:</strong> links to the
+        specific papers under this theme, and current students working on it.</p>
       </div>
+    </article>
 
-      <div class="card">
-        <div class="card-media">Research image / schematic placeholder</div>
-        <div class="card-body">
-          <span class="tag">Research Theme</span>
-          <h3>Research Theme Title 5</h3>
-          <p>Placeholder description of this research theme — to be replaced with an
-          accurate, specific summary of the work carried out under this theme.</p>
-          <div class="placeholder-note">Related publications: to be linked here.</div>
-        </div>
-      </div>
+    <figure style="margin:44px 0 0;border:1px solid var(--line);background:#fff;padding:18px">
+      <img src="assets/img/research/soot-oxidative-reactivity.jpg" alt="Conversion of soot versus temperature at heating rates of 1, 3 and 5 degrees Celsius per minute, for neat diesel and for two blends.">
+      <figcaption class="figcap">A representative result: temperature-programmed oxidation of soot
+      from neat diesel and from two blends, at three heating rates. Shifts in the conversion curve
+      show how an additive changes the reactivity of the particles an engine emits.</figcaption>
+    </figure>
 
-      <div class="card">
-        <div class="card-media">+ Add a new research theme</div>
-        <div class="card-body">
-          <span class="tag">Add New</span>
-          <h3>Additional Theme</h3>
-          <p>Copy one of the card blocks in <code>research.html</code> to add a new
-          research theme as the laboratory's work expands.</p>
-        </div>
-      </div>
-
+    <h2 style="margin-top:56px">Methods and approach</h2>
+    <div class="grid grid-3" style="margin-top:18px">
+      <div class="card"><div class="card-body">
+        <h3>Kinetic mechanism development</h3>
+        <p>Constructing and reducing detailed reaction mechanisms, with thermochemistry and rate
+        constants drawn from theory and from the literature.</p></div></div>
+      <div class="card"><div class="card-body">
+        <h3>Reactor and process simulation</h3>
+        <p>Zero- and one-dimensional reactor models, furnace models and full flowsheet simulation
+        of sulphur recovery and hydrogen production units.</p></div></div>
+      <div class="card"><div class="card-body">
+        <h3>Particle characterisation</h3>
+        <p>Electron microscopy, Raman spectroscopy and elemental analysis of combustion-generated
+        particulate matter.</p></div></div>
     </div>
+
+    <h2 style="margin-top:52px">Collaborations and funding</h2>
+    <p class="placeholder-note">
+      <strong>To add:</strong> current sponsored projects, funding agencies, industrial partners
+      and collaborating institutions.
+    </p>
   </div>
 </section>
-
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -132,6 +161,7 @@
         <h4>CERL</h4>
         <p>Combustion Engineering Research Laboratory<br>
         Department of Chemical Engineering<br>
+        Block I, New INOX Lab<br>
         Indian Institute of Technology Delhi<br>
         Hauz Khas, New Delhi 110016, India</p>
       </div>
@@ -142,24 +172,26 @@
           <li><a href="people.html">People</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="join.html">Join us</a></li>
         </ul>
       </div>
       <div>
-        <h4>Connect</h4>
+        <h4>Prof. Abhijeet Raj</h4>
         <ul>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="https://scholar.google.com/citations?user=QyO7aqgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-          <li><a href="https://www.iitd.ac.in" target="_blank" rel="noopener">IIT Delhi</a></li>
+          <li><a href="mailto:raj@iitd.ac.in">raj@iitd.ac.in</a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&user=QyO7aqgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://chemical.iitd.ac.in/faculty/abhijeet-raj/" target="_blank" rel="noopener">Department profile</a></li>
+          <li><a href="https://researchambit.iitd.ac.in/faculty/raj" target="_blank" rel="noopener">IITD Research Ambit</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> Combustion Engineering Research Laboratory, IIT Delhi. All rights reserved.
+      &copy; <span id="year"></span> Combustion Engineering Research Laboratory, IIT Delhi.
+      Institute names and emblems are the property of IIT Delhi.
     </div>
   </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

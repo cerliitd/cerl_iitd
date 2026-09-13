@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="CERL laboratory mark">
+  <!-- Outer ring: echoes the circular seal format of the IIT Delhi emblem -->
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#7A1B2B" stroke-width="3"/>
+  <circle cx="60" cy="60" r="49" fill="none" stroke="#7A1B2B" stroke-width="1"/>
+
+  <!-- Burner rim -->
+  <path d="M40 96 H80" stroke="#7A1B2B" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M46 96 V88 H74 V96" fill="none" stroke="#7A1B2B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Outer diffusion flame envelope -->
+  <path d="M60 22
+           C 74 40, 82 52, 82 64
+           C 82 79, 72 88, 60 88
+           C 48 88, 38 79, 38 64
+           C 38 52, 46 40, 60 22 Z"
+        fill="none" stroke="#7A1B2B" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Inner rich zone -->
+  <path d="M60 44
+           C 68 55, 71 61, 71 67
+           C 71 75, 66 80, 60 80
+           C 54 80, 49 75, 49 67
+           C 49 61, 52 55, 60 44 Z"
+        fill="#E2703A"/>
+
+  <!-- Blue premixed core -->
+  <path d="M60 62 C 64 68, 65 71, 65 74 C 65 77.5, 62.8 79.5, 60 79.5
+           C 57.2 79.5, 55 77.5, 55 74 C 55 71, 56 68, 60 62 Z"
+        fill="#FBFAF7"/>
+
+  <!-- Reaction-path tick marks around the flame (kinetics motif) -->
+  <g stroke="#7A1B2B" stroke-width="2" stroke-linecap="round">
+    <path d="M22 58 h7"/><path d="M91 58 h7"/>
+    <path d="M25 44 l6.5 3"/><path d="M95 44 l-6.5 3"/>
+    <path d="M31 32 l5.5 4.8"/><path d="M89 32 l-5.5 4.8"/>
+  </g>
+</svg>
