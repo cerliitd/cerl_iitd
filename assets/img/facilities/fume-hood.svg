@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Illustration of a laboratory fume hood">
+  <rect x="0" y="0" width="320" height="220" fill="#F2EFE9"/>
+  <!-- hood canopy -->
+  <path d="M70 40 H250 L235 70 H85 Z" fill="#FBFAF7" stroke="#7A1B2B" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="70" y="20" width="180" height="20" rx="2" fill="#FBFAF7" stroke="#7A1B2B" stroke-width="3"/>
+  <!-- sash frame -->
+  <rect x="85" y="70" width="150" height="80" fill="#FBFAF7" stroke="#7A1B2B" stroke-width="3"/>
+  <!-- sash glass, partly raised -->
+  <rect x="90" y="75" width="140" height="45" fill="#E2703A" opacity=".18"/>
+  <rect x="90" y="75" width="140" height="45" fill="none" stroke="#5C1420" stroke-width="2"/>
+  <rect x="85" y="118" width="150" height="6" fill="#5C1420"/>
+  <!-- worksurface -->
+  <rect x="55" y="150" width="210" height="14" fill="#101418"/>
+  <!-- base cabinet -->
+  <rect x="70" y="164" width="180" height="46" fill="#FBFAF7" stroke="#7A1B2B" stroke-width="3"/>
+  <path d="M160 164 v46" stroke="#7A1B2B" stroke-width="2"/>
+  <circle cx="120" cy="187" r="4" fill="#5A6472"/>
+  <circle cx="200" cy="187" r="4" fill="#5A6472"/>
+  <!-- airflow arrows -->
+  <g stroke="#7A1B2B" stroke-width="2" fill="none" opacity=".6">
+    <path d="M110 95 q15 10 0 20"/>
+    <path d="M160 95 q15 10 0 20"/>
+    <path d="M210 95 q15 10 0 20"/>
+  </g>
+</svg>

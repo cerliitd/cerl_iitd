@@ -6,20 +6,21 @@ Plain HTML and CSS. No build step, no npm, no backend.
 ## Files
 
 ```
-index.html          Home
-research.html       Four research directions + methods
-people.html         PI (full profile), postdoc, PhD scholars, alumni
-publications.html   Numbered selected publications
-facilities.html     Equipment and computational resources
-news.html           Dated updates
-join.html           Openings and how to apply
-contact.html        Address, phone, email, map
+index.html          Home — rotating hero photo, four research themes, team, publications, news
+research.html        Four research directions, each with real figures
+people.html          PI (full profile + photo), postdoc, PhD scholars, alumni
+publications.html    123 entries: journal articles, conference papers, thesis
+facilities.html      Five equipment entries, each with a photo or illustration
+news.html            Dated updates
+join.html            Openings and how to apply
+contact.html         Office and lab address, phone, email, map
 assets/css/style.css
 assets/js/main.js
-assets/img/cerl-mark.svg      lab logo (editable SVG)
+assets/img/iitd_logo.svg      official institute emblem
+assets/img/cerl-mark.svg      lab logo
 assets/img/people/            team photographs
-assets/img/research/          figures and schematics
-assets/img/facilities/        equipment photographs
+assets/img/research/          figures from the group's publications
+assets/img/facilities/        equipment photographs and two line illustrations
 ```
 
 ## Deploy on GitHub Pages
@@ -29,77 +30,52 @@ assets/img/facilities/        equipment photographs
 3. Branch `main`, folder `/ (root)`. Save.
 4. Live in 1–2 minutes at `https://<username>.github.io/<repo>/`.
 
-## Before you publish
+## What's still needed
 
-**Check figure permissions.** Four figures on the site come from published
-papers (`assets/img/research/`). Most publishers allow authors to reuse their
-own figures on a personal or lab page, but the terms differ between Elsevier,
-Wiley and ACS. Confirm each one, and consider adding the source citation to
-each caption.
+This build has no visible "to add" markers on the live pages — everything
+shown is real content. A few things are still worth doing when you have them:
 
-**Add DOI links to publications.** The 123 entries are complete but not linked.
-Wrap a title in an anchor to link it:
-
-```html
-<div class="pub-item-title"><a href="https://doi.org/10.1016/...">Title</a></div>
-```
-
-**Fill the facilities page.** It is the only page still entirely placeholder —
-list only equipment the lab actually has.
+- **Photos for Dr. Padole, the four PhD scholars, and the three alumni.**
+  They currently show a generic grey silhouette. To add one, open
+  `people.html`, find that person's `<div class="person-photo">`, and replace
+  `<img src="assets/img/people/avatar-placeholder.svg" alt="">` with
+  `<img src="assets/img/people/<filename>.jpg" alt="Name">`, after placing the
+  file in `assets/img/people/`.
+- **Degree and graduation year for the three alumni** (Aditya Khator, Sarthak
+  Singh, Sourav Singh) — add as a line under each name in `people.html`.
+- **DOI links on publications**, once convenient — wrap a title in
+  `<a href="https://doi.org/...">Title</a>`.
+- **Figure permissions.** Several research-page images are reproduced from
+  the group's own published papers (Elsevier/Wiley/ACS). Reuse of one's own
+  figures on a lab page is standard, but check each publisher's terms.
+- **A general lab email address**, if one exists, alongside the lab address
+  on the contact page.
+- **Any sections you want back later** — a funded-projects list, a
+  collaborators list, or equipment specs — were left out this round rather
+  than shown empty. Add a new `<h2>` block wherever it fits when there's
+  content for it.
 
 ## Editing
 
-**Add team photographs later.** Person cards are currently text-only by
-design. To add photographs, put the files in `assets/img/people/` and insert
-this line as the first child of each `<div class="person-card">`:
-
-```html
-<div class="person-photo"><img src="assets/img/people/name.jpg" alt="Name"></div>
-```
-
-The card CSS already handles square cropping — nothing else needs changing.
-
-**Add a figure to a research theme** — put the image in
-`assets/img/research/` and replace the grey `<div class="theme-figure">` note
-with:
-
-```html
-<figure class="theme-figure" style="margin:14px 0 0">
-  <img src="assets/img/research/sru.jpg" alt="Describe the figure">
-  <figcaption class="figcap">Caption text.</figcaption>
-</figure>
-```
-
-Add `class="theme-figure tall"` instead if the figure is portrait.
-
-**Add a team member** — copy a `<div class="person-card">` block in
-`people.html` into the right `<div class="people-grid">` and edit it.
+**Add a facility** — copy a `<div class="facility-item">` block in
+`facilities.html` and fill in name, photo and description.
 
 **Add a publication** — copy a `<div class="pub-item">` block in
-`publications.html`, renumber the entries, and add a new
-`<h2 class="pub-year-heading">` if the year is not there yet.
+`publications.html` under the right `<h2 class="pub-year-heading">`
+(add a new one if the year isn't there), and renumber.
 
 **Add news** — copy an `<li>` in `news.html`; newest goes at the top.
 
-**Add a facility** — copy a `<div class="facility-item">` block in
-`facilities.html`. Only list equipment the lab actually has.
-
-## Editor notes on the live pages
-
-Boxes styled like this appear on several pages:
-
-> **To add:** funded projects and sponsors…
-
-They are visible reminders of missing content, marked with the
-`placeholder-note` class. Delete each one as you fill in that section, and make
-sure none are left before the site is circulated widely.
+**Add a team member** — copy a `<div class="person-card">` block in the
+right group in `people.html`.
 
 ## Design notes
 
-- Type: Newsreader (headings) and Public Sans (body), loaded from Google Fonts.
-- Colours are defined once as CSS variables at the top of `style.css`
-  (`--maroon`, `--ember`, `--ink`, `--paper`). Change them there and the whole
-  site follows.
-- The lab mark is a plain SVG file you can open in a text editor or Illustrator.
+- Type: Newsreader (headings) and Public Sans (body), from Google Fonts.
+- Colours are CSS variables at the top of `style.css` (`--maroon`, `--ember`,
+  `--ink`, `--paper`) — change them there and the whole site follows.
+- The homepage hero cycles through three real photographs automatically
+  (pure CSS, no JavaScript); this respects the "reduced motion" browser
+  setting.
 - Responsive down to phone width; navigation collapses to a menu button below
-  680px. Keyboard focus is visible and reduced-motion preferences are respected.
+  680px.

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Illustration of a horizontal tube furnace">
+  <rect x="0" y="0" width="320" height="220" fill="#F2EFE9"/>
+  <!-- body -->
+  <rect x="60" y="60" width="200" height="100" rx="10" fill="#FBFAF7" stroke="#7A1B2B" stroke-width="3"/>
+  <!-- coil suggestion -->
+  <g stroke="#7A1B2B" stroke-width="1.6" fill="none" opacity=".55">
+    <path d="M75 70 v90 M90 70 v90 M105 70 v90 M120 70 v90 M135 70 v90 M150 70 v90 M165 70 v90 M180 70 v90 M195 70 v90 M210 70 v90 M225 70 v90 M240 70 v90"/>
+  </g>
+  <!-- central tube -->
+  <rect x="30" y="100" width="260" height="20" rx="10" fill="#E2703A" stroke="#5C1420" stroke-width="2.5"/>
+  <circle cx="34" cy="110" r="7" fill="#FBFAF7" stroke="#5C1420" stroke-width="2"/>
+  <circle cx="286" cy="110" r="7" fill="#FBFAF7" stroke="#5C1420" stroke-width="2"/>
+  <!-- control box -->
+  <rect x="120" y="168" width="80" height="30" rx="3" fill="#101418"/>
+  <circle cx="135" cy="183" r="5" fill="#E2703A"/>
+  <rect x="150" y="178" width="40" height="10" rx="2" fill="#5A6472"/>
+  <path d="M160 168 v-8 M180 168 v-8" stroke="#101418" stroke-width="2"/>
+  <!-- feet -->
+  <path d="M75 160 v14 M245 160 v14" stroke="#7A1B2B" stroke-width="3" stroke-linecap="round"/>
+</svg>
